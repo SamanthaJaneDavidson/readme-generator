@@ -1,17 +1,22 @@
+#README Generator
+
 ## Description
-asdf
+Command line prompt README Generator
 
 ## Installation
-asdf
+NA
 
 ## Usage
-asdf
+NA
 
 ## Contribution
-asdf
+NA
 
 ## Test
-asdf
+NA
 
 ## License
-asdf
+Need to do badge selection here
+
+## Questions
+[GitHub](https://github.com/SamanthaJaneDavidson)

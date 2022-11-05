@@ -1,4 +1,4 @@
-// TODO: Include packages needed for this application
+// Required node packages 
 const inquirer = require(`inquirer`); 
 const fs = require(`fs`);
 
@@ -6,8 +6,10 @@ const fs = require(`fs`);
 // const questions = [];
 
 // Generate markdown using inquirer prompt responses 
-const generateMarkdown = ({ description, installation, usage, contribution, test, license}) => 
-`## Description
+const generateMarkdown = ({ title, description, installation, usage, contribution, test, license}) => 
+`#${title}
+
+## Description
 ${description}
 
 ## Installation
@@ -23,12 +25,20 @@ ${contribution}
 ${test}
 
 ## License
-${license}`
+${license}
+
+## Questions
+[GitHub](https://github.com/SamanthaJaneDavidson)`
 
 
-//Inquirer prompt 
+// Inquirer prompt 
 inquirer
 .prompt([
+    {
+        type: `input`,
+        name: `title`,
+        message: `What is the title of your project?`,
+    },
     {
         type: `input`,
         name: `description`,
