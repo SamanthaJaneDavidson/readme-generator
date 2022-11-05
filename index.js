@@ -4,19 +4,19 @@ const fs = require(`fs`);
 
 
 // Generate markdown using inquirer prompt responses 
-const generateMarkdown = ({ title, description, installation, usage, contribution, test, license, userName, email}) => 
+const generateMarkdown = ({title, description, installation, usage, contribution, test, license, userName, email}) => 
 `# ${title}
 
 ## Description
 ${description}
 
 ## Table of Contents
-[Installation](#installation)
-[Usage](#usage)
-[Contribution](#contribution)
-[Test](#test)
-[License](#license)
-[Questions](#questions)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Contribution](#contribution)
+ - [Test](#test)
+ - [License](#license)
+ - [Questions](#questions)
 
 ## Installation
 ${installation}
@@ -71,9 +71,10 @@ inquirer
         message: `Please provide testing instructions.`,
     },
     {
-        type: `input`,
+        type: `list`,
         name: `license`,
-        message: `Please provide license information.`,
+        message: `Please select a license.`,
+        choices: [`Apache`, `Boost`, `MIT`, `Mozilla`]
     },
     {
         type: `input`,

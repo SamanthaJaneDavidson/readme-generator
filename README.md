@@ -4,7 +4,12 @@
 a
 
 ## Table of Contents
-[Installation](#installation)
+ - [Installation](#installation)
+ - [Usage](#usage)
+ - [Contribution](#contribution)
+ - [Test](#test)
+ - [License](#license)
+ - [Questions](#questions)
 
 ## Installation
 a
@@ -19,7 +24,7 @@ a
 a
 
 ## License
-a
+MIT
 
 ## Questions
 For questions you can reach me via [GitHub](https://github.com/a) or [Email](a)
