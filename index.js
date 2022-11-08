@@ -1,10 +1,11 @@
 // Required node packages 
 const inquirer = require(`inquirer`); 
 const fs = require(`fs`);
+// const generateMarkdown = require("./utils/generateMarkdown")
 
 
-// Generate markdown using inquirer prompt responses 
-const generateMarkdown = ({title, description, installation, usage, contribution, test, license, userName, email}) => 
+// Create README using inquirer prompt responses 
+const createReadme = ({title, description, installation, usage, contribution, test, license, userName, email}) => 
 `# ${title}
 
 ## Description
@@ -90,9 +91,10 @@ inquirer
 
 // Write file 
 .then((answers) => {
-    const readmeContent = generateMarkdown(answers);
+    const readmeContent = createReadme(answers);
     
     fs.writeFile(`README.md`, readmeContent, (err) => 
     err ? console.log(err) : console.log (`Successfully created README.md`));
 })
+
 

@@ -24,7 +24,8 @@ a
 a
 
 ## License
-MIT
+Apache
+![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
 
 ## Questions
 For questions you can reach me via [GitHub](https://github.com/a) or [Email](a)
