@@ -1,13 +1,12 @@
 // Required node packages 
 const inquirer = require(`inquirer`); 
 const fs = require(`fs`);
-// const generateMarkdown = require("./utils/generateMarkdown")
-
+const renderLicenseBadge = require("./utils/generateMarkdown")
 
 // Create README using inquirer prompt responses 
 const createReadme = ({title, licenseBadge, description, installation, usage, contribution, test, license, userName, email}) => 
 `# ${title}
-${licenseBadge}
+${renderLicenseBadge(license)}
 
 ## Description
 ${description}
@@ -91,11 +90,9 @@ inquirer
 ])
 
 // Write file 
-
 .then((answers) => {
     const readmeContent = createReadme(answers);
     
     fs.writeFile(`README.md`, readmeContent, (err) => 
     err ? console.log(err) : console.log (`Successfully created README.md`));
 })
-
