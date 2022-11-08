@@ -5,8 +5,9 @@ const fs = require(`fs`);
 
 
 // Create README using inquirer prompt responses 
-const createReadme = ({title, description, installation, usage, contribution, test, license, userName, email}) => 
+const createReadme = ({title, licenseBadge, description, installation, usage, contribution, test, license, userName, email}) => 
 `# ${title}
+${licenseBadge}
 
 ## Description
 ${description}
@@ -90,11 +91,11 @@ inquirer
 ])
 
 // Write file 
+
 .then((answers) => {
     const readmeContent = createReadme(answers);
     
     fs.writeFile(`README.md`, readmeContent, (err) => 
     err ? console.log(err) : console.log (`Successfully created README.md`));
 })
-
 
