@@ -16,7 +16,7 @@ The goal of this project was to create a README generator using the node.js inqu
 NA
 
 ## Usage
-This application can be used to generate a README file.
+This application can be used to generate a README file. Click [here](https://drive.google.com/file/d/1L1ILpgtte2QBiF4MAtm7sJj6nn5mHytJ/view) to view a video on how the generator works. 
 
 ## Contribution
 NA
