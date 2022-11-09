@@ -1,7 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Render license badge function 
 function renderLicenseBadge(license) {
-  console.log(license);
 
   let licenseBadge = license
 

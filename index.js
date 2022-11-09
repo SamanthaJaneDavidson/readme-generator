@@ -4,7 +4,7 @@ const fs = require(`fs`);
 const renderLicenseBadge = require("./utils/generateMarkdown")
 
 // Create README using inquirer prompt responses 
-const createReadme = ({title, licenseBadge, description, installation, usage, contribution, test, license, userName, email}) => 
+const createReadme = ({title, description, installation, usage, contribution, test, license, userName, email}) => 
 `# ${title}
 ${renderLicenseBadge(license)}
 
